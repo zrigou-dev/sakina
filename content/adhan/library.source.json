@@ -1,0 +1,188 @@
+{
+  "schema": 1,
+  "notes": "Curated candidates for the adhan library. `evaluate` verifies every Commons licence, measures audio quality against the gate in scripts/adhan/lib.mjs and records the verdict; `build` masters only voices that are enabled AND pass. Excluded entries are kept with their reason so the decision is auditable.",
+  "candidates": [
+    {
+      "id": "malmo-fajr",
+      "enabled": true,
+      "commons": "File:Eid al-Fitr Fajr azan at Malmö Mosque - 19 August 2012.webm",
+      "kind": "fajr",
+      "delivery": "bundled",
+      "name": {
+        "ar": "أذان الفجر — مسجد مالمو",
+        "en": "Fajr adhan — Malmö Mosque",
+        "fr": "Adhan du Fajr — Mosquée de Malmö"
+      },
+      "place": {
+        "ar": "مالمو، السويد",
+        "en": "Malmö, Sweden",
+        "fr": "Malmö, Suède",
+        "country": "SE"
+      },
+      "style": {
+        "ar": "البلقان",
+        "en": "Balkan",
+        "fr": "Balkans"
+      },
+      "trim": {
+        "startSec": 12.0,
+        "endSec": 236.4
+      },
+      "performer": {
+        "name": "Besim Azemi",
+        "basis": "Named in the title of the video published by Islamic Center Malmö on its own channel (the supplication that follows the adhan is cut)."
+      }
+    },
+    {
+      "id": "aaqib-azeez",
+      "enabled": true,
+      "commons": "File:The Adhan - Muslim Call to Prayer - Aaqib Azeez.mp3",
+      "kind": "adhan",
+      "delivery": "bundled",
+      "name": {
+        "ar": "عاقب عزيز",
+        "en": "Aaqib Azeez",
+        "fr": "Aaqib Azeez"
+      },
+      "place": null,
+      "style": {
+        "ar": "أذان مسجَّل",
+        "en": "Studio recording",
+        "fr": "Enregistrement studio"
+      },
+      "performer": {
+        "name": "Aaqib Azeez",
+        "basis": "The uploader states on his Commons talk page that this is his own voice and that he is the original reciter and rights holder; commercial use confirmed by him."
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "commons": "File:Adhan, Great Mosque of Mecca - Jan 21, 2013.webm",
+      "reason": "Removed after listening feedback and rights review: a visitor's phone video of the live Masjid al-Haram muezzin. The muezzin's performer rights (the Haram muezzins are appointed by the General Presidency for the Affairs of the Two Holy Mosques) are unresolved, and the capture is reverberant and amateur. Needs written permission — see content/adhan/PERMISSIONS_NEEDED.md."
+    },
+    {
+      "commons": "File:Adhan in Shalqar mosque.webm",
+      "reason": "Removed: field recording by a visitor; the performer's consent to the 'own work' licence cannot be verified, and the capture is not professional quality."
+    },
+    {
+      "commons": "File:Beautiful adhan.ogg",
+      "reason": "Removed: the uploader account (Adam-synagda) was blocked indefinitely on Commons for 'Abusing multiple accounts' (verified in the block log) and also imported other people's images, so its 'own work, CC0' claim is not reliable."
+    },
+    {
+      "commons": "File:Azan.ogg",
+      "reason": "Same class of problem: uploader account blocked for abusing multiple accounts."
+    },
+    {
+      "commons": "File:33937 ejaz215 call-to-prayer-from-the-prophet-s-mo.ogg",
+      "reason": "Licence cannot be verified: a 2014 third-party copy of a Freesound upload (claimed CC BY 3.0). The Freesound original has since been deleted, and Commons volunteers never reviewed the licence. Audio quality is excellent (clean, −53 dBFS floor) — it can be added if the rights holder or a reviewer confirms the licence."
+    },
+    {
+      "commons": "File:Call to prayer by Sabah Fakhry.mp3",
+      "reason": "Licence claim invalid: tagged PD-Old with the rationale 'Adhan has been in effect since c.622 A.D.'. It is a 1985 recording by a singer who died in 2021 — copyrighted."
+    },
+    {
+      "commons": "File:Maghrib Adhan at the Masjid al Haram, Mecca - 25 Feb, 2012.webm",
+      "reason": "Quality: crowd noise under the whole recording (noise floor −23 dBFS, voice-to-background 9 dB), mono, band-limited."
+    },
+    {
+      "commons": "File:Time of Adhan, Great Mosque of Mecca - Jan 6, 2018 .webm",
+      "reason": "Quality: mono capture, noise floor −33 dBFS, voice-to-background 13 dB."
+    },
+    {
+      "commons": "File:Adhan in Istanbul.webm",
+      "reason": "Quality: 50 s of street ambience, noise floor −28 dBFS; not a complete adhan."
+    },
+    {
+      "commons": "File:Hminsec150 Konya.webm",
+      "reason": "Quality: 60 s drone under wide-band noise; not a complete adhan."
+    },
+    {
+      "commons": "File:The sound of Syria (2007).webm",
+      "reason": "Not an adhan recording: travel video with ambience."
+    },
+    {
+      "commons": "File:اذان حسین صبحدل.webm",
+      "reason": "Wording cannot be verified without listening (Iranian tradition may add phrases that are not part of the Sunni adhan), and the file mixes unrelated material after the adhan. Excluded to avoid presenting unverified wording as the standard adhan."
+    },
+    {
+      "commons": "File:AzaanMaahur.ogg",
+      "reason": "Same wording-verification concern as above (Persian dastgah recitation)."
+    },
+    {
+      "commons": "File:Jaffa Muezzin P1020417.ogv",
+      "reason": "Quality: 16 kHz mono capture, 39 s."
+    },
+    {
+      "commons": "File:Muezzin of kfar Kama P1150691.ogv",
+      "reason": "Quality: same low-bandwidth handheld capture class as the Jaffa recordings."
+    },
+    {
+      "commons": "File:Tour guide recite Adhan in the Shah mosque in Isfahan, Iran.webm",
+      "reason": "Not a muezzin (a tour guide demonstrating) and Iranian-tradition wording cannot be verified."
+    },
+    {
+      "archive": "3241extraitmuezzinbombes",
+      "reason": "Interview excerpt with explosions audible; 53 s."
+    },
+    {
+      "archive": "basim_alkarbalaee",
+      "reason": "Uploader-supplied licence with unverifiable provenance and wording."
+    },
+    {
+      "archive": "adhan-from-egypt-abdulnasser-harak",
+      "reason": "'Public domain mark' set by an anonymous re-uploader of a modern recording — not a rights-holder statement."
+    },
+    {
+      "archive": "abdulmajid-al-suraihi-hayya-ala-salah-ad",
+      "reason": "Same: public-domain mark on a re-upload of a living muezzin's recording."
+    },
+    {
+      "note": "Recordings of famous muezzins (Mishary Alafasy, Ali Ahmed Mulla, Nasser al-Qatami, …) are commercially released and copyrighted; no free licence exists. They are NOT included."
+    },
+    {
+      "archive": "aporee_8479_10269",
+      "reason": "Quality: Kalenderhane Mosque field recording — very faint, distant capture (−34 LUFS, voice barely above ambience)."
+    },
+    {
+      "commons": "File:Athan during Ramadan 2.wav",
+      "reason": "Quality: very low-level capture with weak contrast (−31 LUFS); 84 s."
+    },
+    {
+      "commons": "File:Azan.ogg",
+      "reason": "Quality: noise floor −33 dBFS, just outside the gate (−34)."
+    },
+    {
+      "commons": "File:Islamic call to worship.oga",
+      "reason": "Quality: noise floor −28 dBFS."
+    },
+    {
+      "commons": "File:Llamada a oración Mezquita Hassan II.wav",
+      "reason": "Quality: voice-to-background only 16 dB (reverberant)."
+    },
+    {
+      "commons": "File:Adhan.ogg",
+      "reason": "Fragment: 42 s mono 'announcement', not a complete adhan."
+    },
+    {
+      "commons": "File:Oración Al-Azzan.ogg",
+      "reason": "Fragment: 30 s excerpt."
+    },
+    {
+      "commons": "File:Melaka V - Call to prayer, Masjid Kampung Kling.webm",
+      "reason": "Fragment: 9 s."
+    },
+    {
+      "commons": "File:Adhan During the Lebanese Protests in Tripoli 2019.webm",
+      "reason": "Fragment with crowd noise: 28 s."
+    },
+    {
+      "archive": "Nirwahamum_Azan_Murai_Kalum_Masjid_Trusty_Board",
+      "reason": "45-minute lecture/compilation, not an adhan."
+    },
+    {
+      "archive": "aporee_35648_40922",
+      "reason": "Band-limited 16 kbps field recording with other ambience."
+    }
+  ]
+}

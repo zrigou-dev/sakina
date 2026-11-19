@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-11-19T00:56:16.451Z",
+  "sources": {
+    "adhkar.morningEvening": {
+      "name": "Morning & Evening Adhkar DB",
+      "url": "https://github.com/Seen-Arabic/Morning-And-Evening-Adhkar-DB",
+      "licence": "MIT",
+      "items": 34,
+      "sha256": "1570ad6b89e782be4449f9a7d2e4170e1ff0d428f632b2b02fa0aca087f36ab1"
+    },
+    "adhkar.hisn": {
+      "name": "Islamic Pro Azkar API — Hisn al-Muslim",
+      "url": "https://github.com/YousefAsalya/Islamic-Pro-azkar-API",
+      "licence": "MIT",
+      "chapters": 132,
+      "items": 267,
+      "sha256": "389b7dcb66831922918af87d73a405f7114e909c42c9db6eb2ae05720e559749"
+    },
+    "hadith.forty": {
+      "name": "hadith-api — Forty Hadith of an-Nawawi & Forty Hadith Qudsi (ar/en/fr)",
+      "url": "https://github.com/fawazahmed0/hadith-api",
+      "licence": "The Unlicense (dataset); translators retain rights in translations",
+      "sha256": "d545f556fd575d94485651280136d68607c6d69459831330a35c5b52a06ef7b0"
+    },
+    "hadith.catalogue": {
+      "name": "hadith-api editions",
+      "url": "https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions.json",
+      "licence": "The Unlicense",
+      "sha256": "741001d3de40097a32566a3f6c8ed61b62b9c3de08f35892aac57a43ff06dd20"
+    },
+    "sadaqah.hadith": {
+      "name": "Sahih Muslim 1631 (ongoing charity) — Arabic, English, French",
+      "url": "https://github.com/fawazahmed0/hadith-api",
+      "licence": "The Unlicense (dataset); translators retain rights in translations",
+      "sha256": "5d83bdf8a7125780b77a55b8392464074afae282ef7386631caee27293a96d0c"
+    }
+  }
+}

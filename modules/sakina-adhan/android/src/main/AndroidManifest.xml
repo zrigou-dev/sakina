@@ -1,0 +1,28 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+  <application>
+    <!-- Plays the adhan: foreground service on the alarm audio stream. -->
+    <service
+      android:name=".AdhanService"
+      android:exported="false"
+      android:foregroundServiceType="mediaPlayback" />
+
+    <!-- Fired by AlarmManager.setAlarmClock at prayer time. -->
+    <receiver android:name=".AdhanReceiver" android:exported="false" />
+
+    <!-- Re-arms the stored alarms after a reboot, an app update, or a clock/time-zone change. -->
+    <receiver android:name=".BootReceiver" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+        <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+        <action android:name="android.intent.action.TIME_SET" />
+        <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

@@ -39,3 +39,21 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Test & QA output
+e2e/.output/
+dist-android/
+
+# personal adhan download cache (large)
+content/adhan/personal/_cache/
+
+# Local tooling state
+.omc/
+assets/.omc/
+.claude/
+
+# Regenerable raw downloads of adhan originals (the licensed, trimmed originals + attribution stay tracked)
+content/adhan/originals/_raw/
+
+# Logs
+*.log

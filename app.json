@@ -1,25 +1,136 @@
 {
   "expo": {
-    "name": "_scaffold",
-    "slug": "_scaffold",
-    "version": "1.0.0",
+    "name": "SAKINA",
+    "slug": "sakina",
+    "scheme": "sakina",
+    "version": "0.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#F6F2EA",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "app.sakina.companion",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "SAKINA uses your location only on this device to calculate prayer times and the Qibla direction. It is never sent anywhere.",
+        "UIBackgroundModes": [
+          "audio"
+        ]
+      },
+      "entitlements": {
+        "com.apple.developer.usernotifications.time-sensitive": true
+      },
+      "icon": {
+        "light": "./assets/icon.png",
+        "dark": "./assets/ios-icon-dark.png",
+        "tinted": "./assets/ios-icon-tinted.png"
+      }
     },
     "android": {
+      "package": "app.sakina.companion",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0E5A45",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "SCHEDULE_EXACT_ALARM",
+        "POST_NOTIFICATIONS",
+        "VIBRATE"
+      ],
+      "blockedPermissions": [
+        "ACCESS_BACKGROUND_LOCATION",
+        "RECORD_AUDIO"
+      ],
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "output": "single"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "buildArchs": [
+              "arm64-v8a",
+              "armeabi-v7a"
+            ],
+            "enableMinifyInReleaseBuilds": true,
+            "enableShrinkResourcesInReleaseBuilds": true
+          }
+        }
+      ],
+      [
+        "expo-router",
+        {
+          "headers": {
+            "Cross-Origin-Embedder-Policy": "credentialless",
+            "Cross-Origin-Opener-Policy": "same-origin"
+          }
+        }
+      ],
+      "expo-status-bar",
+      [
+        "expo-sqlite",
+        {
+          "enableFTS": true
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "enableBackgroundPlayback": true,
+          "microphonePermission": false
+        }
+      ],
+      "expo-font",
+      "expo-sharing",
+      "expo-asset",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 120,
+          "backgroundColor": "#F6F2EA",
+          "dark": {
+            "image": "./assets/splash-icon-dark.png",
+            "backgroundColor": "#0A1020"
+          }
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "SAKINA uses your location only on this device to calculate prayer times and the Qibla direction. It is never sent anywhere.",
+          "isAndroidBackgroundLocationEnabled": false,
+          "isIosBackgroundLocationEnabled": false
+        }
+      ],
+      "./plugins/withAndroidLeanSounds.js",
+      [
+        "expo-notifications",
+        {
+          "color": "#0E5A45",
+          "sounds": [
+            "./assets/sounds/adhan_malmo_fajr.wav",
+            "./assets/adhan/clips/adhan_malmo_fajr.mp3",
+            "./assets/sounds/adhan_aaqib_azeez.wav",
+            "./assets/adhan/clips/adhan_aaqib_azeez.mp3"
+          ],
+          "icon": "./assets/notification-icon.png"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "personalAdhanLibrary": true
     }
   }
 }

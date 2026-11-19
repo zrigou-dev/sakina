@@ -1,0 +1,86 @@
+{
+  "source": "api.aladhan.com/v1/gToH?calendarMethod=UAQ",
+  "fetchedAt": "2026-11-18T23:11:43.884Z",
+  "cases": [
+    {
+      "gregorian": "2024-03-11",
+      "hijri": {
+        "day": 1,
+        "month": 9,
+        "year": 1445
+      }
+    },
+    {
+      "gregorian": "2024-04-10",
+      "hijri": {
+        "day": 1,
+        "month": 10,
+        "year": 1445
+      }
+    },
+    {
+      "gregorian": "2025-03-01",
+      "hijri": {
+        "day": 1,
+        "month": 9,
+        "year": 1446
+      }
+    },
+    {
+      "gregorian": "2025-06-06",
+      "hijri": {
+        "day": 10,
+        "month": 12,
+        "year": 1446
+      }
+    },
+    {
+      "gregorian": "2026-02-18",
+      "hijri": {
+        "day": 1,
+        "month": 9,
+        "year": 1447
+      }
+    },
+    {
+      "gregorian": "2026-11-18",
+      "hijri": {
+        "day": 8,
+        "month": 6,
+        "year": 1448
+      }
+    },
+    {
+      "gregorian": "2027-01-01",
+      "hijri": {
+        "day": 23,
+        "month": 7,
+        "year": 1448
+      }
+    },
+    {
+      "gregorian": "2028-05-05",
+      "hijri": {
+        "day": 10,
+        "month": 12,
+        "year": 1449
+      }
+    },
+    {
+      "gregorian": "2023-07-19",
+      "hijri": {
+        "day": 1,
+        "month": 1,
+        "year": 1445
+      }
+    },
+    {
+      "gregorian": "2030-01-15",
+      "hijri": {
+        "day": 11,
+        "month": 9,
+        "year": 1451
+      }
+    }
+  ]
+}

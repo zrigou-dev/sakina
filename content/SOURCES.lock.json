@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-11-19T00:26:49.370Z",
+  "sources": {
+    "uthmani": {
+      "name": "Tanzil Quran Text (Uthmani)",
+      "url": "https://tanzil.net/pub/download/index.php?quranType=uthmani&outType=xml&agree=true",
+      "file": "assets/content/quran-uthmani.xml",
+      "sha256": "203f0f1bf3158b1e5be4ab9f8f6870e570aab6d9a626fe6192a70b75d4afe0fd",
+      "bytes": 1516178,
+      "licence": "CC BY 3.0 — verbatim copies only, attribution + link to tanzil.net required"
+    },
+    "simpleClean": {
+      "name": "Tanzil Quran Text (Simple Clean) — used only as a search index",
+      "url": "https://tanzil.net/pub/download/index.php?quranType=simple-clean&outType=xml&agree=true",
+      "file": "assets/content/quran-simple-clean.xml",
+      "sha256": "140787b7c399b11d54bfa72c237075916084232efa8a4cddf704cc8a2a74b1fe",
+      "bytes": 926476,
+      "licence": "CC BY 3.0 — verbatim copies only, attribution + link to tanzil.net required"
+    },
+    "metadata": {
+      "name": "Tanzil Quran Metadata",
+      "url": "https://tanzil.net/res/text/metadata/quran-data.xml",
+      "file": "scripts/content-import/sources/quran-data.xml",
+      "sha256": "8867c1d88191472adec9db694b3cd9f135b1a2ef580574d32cf888dcb22c5c7a",
+      "bytes": 77234,
+      "licence": "CC BY (Tanzil.info)"
+    },
+    "cities": {
+      "name": "GeoNames cities15000",
+      "url": "https://download.geonames.org/export/dump/cities15000.zip",
+      "file": "scripts/content-import/sources/cities15000.zip",
+      "sha256": "8a91bb932bb4561796cdd0b5b97506e821493acae970c7db9d888a4e518d18b1",
+      "bytes": 3368641,
+      "licence": "CC BY 4.0 — GeoNames (geonames.org)"
+    },
+    "countries": {
+      "name": "GeoNames countryInfo",
+      "url": "https://download.geonames.org/export/dump/countryInfo.txt",
+      "file": "scripts/content-import/sources/countryInfo.txt",
+      "sha256": "79f8f59ea01cbb40438bf1856dd6c2ff201f03f8fc72d0530b2646aaf603ef04",
+      "bytes": 32112,
+      "licence": "CC BY 4.0 — GeoNames (geonames.org)"
+    },
+    "asma": {
+      "name": "Asma al-Husna (AlAdhan API)",
+      "url": "https://api.aladhan.com/v1/asmaAlHusna",
+      "file": "scripts/content-import/sources/asma-al-husna.json",
+      "sha256": "aeeb23b39c8f4b26eccf7f3641dedff6c3f36352e1f5b5cc333d474ca68a1cbf",
+      "bytes": 10935,
+      "licence": "Public API by Islamic Network (aladhan.com); names are scriptural, English meanings attributed to AlAdhan"
+    }
+  }
+}

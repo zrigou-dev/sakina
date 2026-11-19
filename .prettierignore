@@ -1,0 +1,11 @@
+node_modules
+dist
+.expo
+e2e/.output
+e2e/screenshots
+assets
+content/SOURCES.lock.json
+src/content/**/*.generated.*
+scripts/content-import/sources
+tests/fixtures
+*.md
